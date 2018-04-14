@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="zh-cn">
   <head>
     
 <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
 
 
   <meta name="description" content="【笔记】用hexo+github搭建自己的博客"/>
+
+
+
+
+
 
 
 
@@ -26,40 +36,16 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.6.0" />
 
 
 
 <link rel="canonical" href="http://yoursite.com/2018/04/14/【笔记】用hexo-github搭建自己的博客/"/>
 
 
-<meta name="description" content="根目录右键 git bash here  常用代码:12hexo d -g  //更新hexo s  //本地预览地址 localhost:4000 更改主题后的3个步骤：123hexo clean //清空静态页面hexo generate //生成静态页面hexo deploy //部署 下载主题 打开themes文件夹 右键get bash there 1git clone 主题地址（例如">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【笔记】用hexo+github搭建自己的博客">
-<meta property="og:url" content="http://yoursite.com/2018/04/14/【笔记】用hexo-github搭建自己的博客/index.html">
-<meta property="og:site_name" content="fkdrr的博客">
-<meta property="og:description" content="根目录右键 git bash here  常用代码:12hexo d -g  //更新hexo s  //本地预览地址 localhost:4000 更改主题后的3个步骤：123hexo clean //清空静态页面hexo generate //生成静态页面hexo deploy //部署 下载主题 打开themes文件夹 右键get bash there 1git clone 主题地址（例如">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-04-14T06:01:02.030Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【笔记】用hexo+github搭建自己的博客">
-<meta name="twitter:description" content="根目录右键 git bash here  常用代码:12hexo d -g  //更新hexo s  //本地预览地址 localhost:4000 更改主题后的3个步骤：123hexo clean //清空静态页面hexo generate //生成静态页面hexo deploy //部署 下载主题 打开themes文件夹 右键get bash there 1git clone 主题地址（例如">
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.6.0" />
 
 
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-
-
-
-
-
-<script type="text/javascript">
-  var themeConfig = {
-    fancybox: {
-      enable: false
-    },
-  };
-</script>
 
 
 
@@ -68,48 +54,123 @@
 
 
 
+  <script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
     <title> 【笔记】用hexo+github搭建自己的博客 - fkdrr的博客 </title>
   </head>
 
-  <body>
-    <div id="page">
-      <header id="masthead"><div class="site-header-inner">
-    <h1 class="site-title">
-        <a href="/." class="logo">fkdrr的博客</a>
-    </h1>
-
-    <nav id="nav-top">
-        
-            <ul id="menu-top" class="nav-top-items">
-                
-                    <li class="menu-item">
-                        <a href="/archives">
-                            
-                            
-                                Archives
-                            
-                        </a>
-                    </li>
-                
-                    <li class="menu-item">
-                        <a href="/about">
-                            
-                            
-                                About
-                            
-                        </a>
-                    </li>
-                
-            </ul>
-        
-  </nav>
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">fkdrr的博客</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </div>
 
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    
+      <a href="/">
+        <li class="mobile-menu-item">
+          
+          
+            首页
+          
+        </li>
+      </a>
+    
+      <a href="/archives/">
+        <li class="mobile-menu-item">
+          
+          
+            归档
+          
+        </li>
+      </a>
+    
+      <a href="/about">
+        <li class="mobile-menu-item">
+          
+          
+            关于
+          
+        </li>
+      </a>
+    
+  </ul>
+</nav>
+
+    <div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">fkdrr的博客</a>
+</div>
+
+<nav class="site-navbar">
+  
+    <ul id="menu" class="menu">
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/">
+            
+            
+              首页
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/archives/">
+            
+            
+              归档
+            
+          </a>
+        </li>
+      
+        <li class="menu-item">
+          <a class="menu-item-link" href="/about">
+            
+            
+              关于
+            
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+
       </header>
-      <div id="content">
-        
-    <div id="primary">
-        
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content">
+            
+  
   <article class="post">
     <header class="post-header">
       <h1 class="post-title">
@@ -118,18 +179,31 @@
         
       </h1>
 
-      <time class="post-time">
-          Apr 14 2018
-      </time>
+      <div class="post-meta">
+        <span class="post-time">
+          2018-04-14
+        </span>
+        
+        
+      </div>
     </header>
 
-
-
     
-            <div class="post-content">
-            <blockquote>
+    
+  <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#常用代码"><span class="toc-text">常用代码:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更改主题后的3个步骤："><span class="toc-text">更改主题后的3个步骤：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#下载主题"><span class="toc-text">下载主题</span></a></li></ol>
+    </div>
+  </div>
+
+
+    <div class="post-content">
+      
+        <blockquote>
 <p>根目录右键 git bash here</p>
 </blockquote>
+<a id="more"></a>
 <h2 id="常用代码"><a href="#常用代码" class="headerlink" title="常用代码:"></a>常用代码:</h2><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g  <span class="comment">//更新</span></span><br><span class="line">hexo s  <span class="comment">//本地预览地址 localhost:4000</span></span><br></pre></td></tr></table></figure>
 <h2 id="更改主题后的3个步骤："><a href="#更改主题后的3个步骤：" class="headerlink" title="更改主题后的3个步骤："></a>更改主题后的3个步骤：</h2><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="comment">//清空静态页面</span></span><br><span class="line">hexo <span class="keyword">generate</span> <span class="comment">//生成静态页面</span></span><br><span class="line">hexo deploy <span class="comment">//部署</span></span><br></pre></td></tr></table></figure>
 <h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><ol>
@@ -141,13 +215,38 @@
 </li>
 </ol>
 
-            </div>
-          
+      
+    </div>
+
+    
+      
+      
+
+  <div class="post-copyright">
+    <p class="copyright-item">
+      <span>原文作者: </span>
+      <a href="http://yoursite.com">fkdrr</a>
+    </p>
+    <p class="copyright-item">
+      <span>原文链接: </span>
+      <a href="http://yoursite.com/2018/04/14/【笔记】用hexo-github搭建自己的博客/">http://yoursite.com/2018/04/14/【笔记】用hexo-github搭建自己的博客/</a>
+    </p>
+    <p class="copyright-item">
+      <span>许可协议: </span>
+      
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
+
+
+
+      
+      
+    
 
     
       <footer class="post-footer">
-		
-
+        
         
         
   <nav class="post-nav">
@@ -155,44 +254,104 @@
       <a class="prev" href="/2018/04/14/Read Me/">
         <i class="iconfont icon-left"></i>
         <span class="prev-text nav-default">Read Me Polarbear</span>
-        <span class="prev-text nav-mobile">Prev</span>
+        <span class="prev-text nav-mobile">上一篇</span>
       </a>
     
     
       <a class="next" href="/2018/04/12/hello-world/">
         <span class="next-text nav-default">Hello World</span>
-        <span class="prev-text nav-mobile">Next</span>
+        <span class="prev-text nav-mobile">下一篇</span>
         <i class="iconfont icon-right"></i>
       </a>
     
   </nav>
 
-        
+      </footer>
+    
+
+  </article>
+
+
+          </div>
+          
   <div class="comments" id="comments">
     
   </div>
 
 
-      </footer>
-    
-  </article>
+        </div>
+      </main>
 
-    </div>
+      <footer id="footer" class="footer">
 
-      </div>
+  <div class="social-links">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+          <a href="https://weibo.com/fkdrr/" class="iconfont icon-weibo" title="weibo"></a>
+        
+      
+    
+      
+    
+      
+        
+          <a href="https://www.douban.com/people/fkdrr/" class="iconfont icon-douban" title="douban"></a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+    
+    
+      
+      <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    
+  </div>
 
-      <footer id="colophon"><span class="copyright-year">
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://hexo.io/">Hexo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even">Even</a>
+  </span>
+
+  <span class="copyright-year">
     
-        &copy;
-    
-        2014 -
+    &copy; 
+     
+      2015 - 
     
     2018
-    <span class="footer-author">fkdrr.</span>
-    <span class="power-by">
-        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
     </span>
-</span>
+    <span class="author">fkdrr</span>
+  </span>
+</div>
 
       </footer>
 
@@ -200,7 +359,13 @@
         <i class="iconfont icon-up"></i>
       </div>
     </div>
+
     
+  
+  
+
+  
+
 
 
     
@@ -213,9 +378,14 @@
   
 
   
+    <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  
 
-    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
-<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+  
+
+
+    <script type="text/javascript" src="/js/src/even.js?v=2.6.0"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=2.6.0"></script>
 
   </body>
 </html>
