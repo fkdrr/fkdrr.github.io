@@ -11,10 +11,8 @@
 
 
 
-  
 
-
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next mist" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -84,14 +82,14 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     version: '6.3.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"remove","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -117,7 +115,7 @@
 <meta property="og:description" content="hexo-theme-polarbear A light theme bases on Even, designed by Giuem.在线预览 Demo   安装使用（Installation）12$ npm install hexo-renderer-scss --save$ git clone https://github.com/frostfan/hexo-theme-polarbear">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://wx3.sinaimg.cn/large/e942863dly1fd36foz16ij21kw0xwjxw.jpg">
-<meta property="og:updated_time" content="2018-04-15T10:20:50.072Z">
+<meta property="og:updated_time" content="2018-05-20T12:07:57.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Read Me Polarbear">
 <meta name="twitter:description" content="hexo-theme-polarbear A light theme bases on Even, designed by Giuem.在线预览 Demo   安装使用（Installation）12$ npm install hexo-renderer-scss --save$ git clone https://github.com/frostfan/hexo-theme-polarbear">
@@ -225,6 +223,30 @@
           <li class="menu-item menu-item-home">
     <a href="/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
   </li>
         
         
@@ -342,7 +364,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-04-15 18:20:50" itemprop="dateModified" datetime="2018-04-15T18:20:50+08:00">2018-04-15</time>
+                <time title="修改时间：2018-05-20 20:07:57" itemprop="dateModified" datetime="2018-05-20T20:07:57+08:00">2018-05-20</time>
               
             
           </span>
@@ -380,6 +402,7 @@
 </blockquote>
 <p><img src="https://wx3.sinaimg.cn/large/e942863dly1fd36foz16ij21kw0xwjxw.jpg" alt="Polar Bear"></p>
 <h2 id="安装使用（Installation）"><a href="#安装使用（Installation）" class="headerlink" title="安装使用（Installation）"></a>安装使用（Installation）</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-renderer-scss --save</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/frostfan/hexo-theme-polarbear themes/polarbear</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 <p>修改（Change） polarbear/config.yml <code>theme: polarbear</code></p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: http://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: http://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">polarbear</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 在归档页面显示所有文章 （Show all articles on archive page.）</span></span><br><span class="line"><span class="comment"># 需要安装(Need to install) hexo-generator-archive 插件支持</span></span><br><span class="line"><span class="attr">archive_generator:</span></span><br><span class="line"><span class="attr">    per_page:</span> <span class="number">0</span></span><br><span class="line"><span class="attr">    yearly:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">    monthly:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">    daily:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 <h2 id="ReadmeFirst"><a href="#ReadmeFirst" class="headerlink" title="ReadmeFirst"></a>ReadmeFirst</h2><p>主题较为简陋粗糙，使用及修改时需要对 Hexo 有一定了解。<br>The theme is relatively simple and rough, have a certain understanding of Hexo before you use and modify.</p>
@@ -462,131 +485,6 @@
 
         </div>
         
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">fkdrr</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">3</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
-                    
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
-          
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-            
-          
-          
-
-        </div>
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo-theme-polarbear"><span class="nav-number">1.</span> <span class="nav-text">hexo-theme-polarbear</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装使用（Installation）"><span class="nav-number">1.1.</span> <span class="nav-text">安装使用（Installation）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ReadmeFirst"><span class="nav-number">1.2.</span> <span class="nav-text">ReadmeFirst</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#侧边栏"><span class="nav-number">1.3.</span> <span class="nav-text">侧边栏</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#增加功能-（More-Functions）"><span class="nav-number">1.4.</span> <span class="nav-text">增加功能 （More Functions）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#感谢-Thanks"><span class="nav-number">1.5.</span> <span class="nav-text">感谢 (Thanks)</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
       </div>
     </main>
 
@@ -614,7 +512,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Muse</a> v6.3.0</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.3.0</div>
 
 
 
